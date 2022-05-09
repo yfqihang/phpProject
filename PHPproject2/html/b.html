@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+a:link { 
+color:#3C3C3C; 
+text-decoration:underline; 
+} 
+a:visited { 
+color:#0000FF; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#FF00FF; 
+text-decoration:none; 
+} 
+a:active { 
+color:#D200D2; 
+text-decoration:none; 
+} 
+</style>
+	<body>
+		<a href="#" target="black">点我点我</a>
+
+	</body>
+	<script>
+	//获取cookie代码
+var getCookie = function (name) {
+  var arr;
+  var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+  if (arr = document.cookie.match(reg)){
+    return arr[2];
+  }
+  else
+    return null;
+};
+//点击获取按钮之后调用的函数
+function getcookie() {
+  console.log(getCookie("userName"));
+  console.log(getCookie("password"))
+}
+	</script>
+</html>

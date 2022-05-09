@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+		 <style>
+        #box2{width:250px;height:300px;border:1px solid #e5e5e5;background:#f1f1f1;}
+    </style>
+	<body>
+		<div id="box2"></div>
+	</body>
+	<script>
+       window.onload= function(){
+          var oBox2=document.getElementById("box2");
+          var oSpan=document.getElementById("span1");
+          var oText1=document.getElementById("text1");
+          var oText2=document.getElementById("text2");
+          var oText3=document.getElementById("text3");
+          var oBtn=document.getElementById("Btn");
+          oBtn.onclick = function(){
+              oBox2.innerHTML =oBox2.innerHTML  + oSpan.innerHTML +  oText1.value +  oText2.value +  oText3.value + "<br/>";
+              //oBox.innerHTML += oSpan.innerHTML + oText.value +  "<br/>";这是简便的写法，在js中 a=a+b ,那么也等同于 a+=b
+             oText.value=""
+         };
+     }
+      </script>
+</html>
